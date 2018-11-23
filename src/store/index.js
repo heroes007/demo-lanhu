@@ -5,8 +5,9 @@ Vue.use(Vuex)
 
 const chat = {
   state:{
-    ask:[],
-    anwser:[]
+    ask:[1,2,3,4,5],
+    anwser:[],
+    disease:[1,1,1,1,1,1,1,1,1]
   },
   mutations:{
     ADD_ASK(state,new_ask){

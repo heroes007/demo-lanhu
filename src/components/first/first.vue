@@ -1,36 +1,36 @@
 <template>
-    <div class="contain">
-      <div class="title">
-        <h1 class="title-c">欢迎进入临床思维训练</h1>
-        <h2 class="title-e">Clinical Decision Making System</h2>
-      </div>
-      <Card class="card">
-        <div class="card-route">
-          <a class="route-login" href="">登录</a>
-          <a class="route-sign" href="">注册</a>
-        </div>
-        <Form ref="formInline" :model="formInline" :rules="ruleInline" inline>
-          <FormItem prop="user" class="formUsername">
-            <Input type="text" v-model="formInline.user" placeholder="Username">
-            <Icon type="ios-person-outline" slot="prepend"></Icon>
-            </Input>
-          </FormItem>
-          <FormItem prop="password" class="formPassword">
-            <Input type="password" v-model="formInline.password" placeholder="Password">
-            <Icon type="ios-lock-outline" slot="prepend"></Icon>
-            </Input>
-          </FormItem>
-          <FormItem class="formBtn">
-            <Button @click="handleSubmit('formInline')">注册</Button>
-            <Button type="primary" @click="handleSubmit('formInline')">登录</Button>
-          </FormItem>
-          <FormItem class="formChange">
-            <Checkbox v-model="single">记住密码</Checkbox>
-            <a href="">忘记密码</a>
-          </FormItem>
-        </Form>
-      </Card>
+  <div class="contain">
+    <div class="title">
+      <h1 class="title-c">欢迎进入临床思维训练</h1>
+      <h2 class="title-e">Clinical Decision Making System</h2>
     </div>
+    <Card class="card">
+      <div class="card-route">
+        <a class="route-login" href="">登录</a>
+        <a class="route-sign" href="">注册</a>
+      </div>
+      <Form ref="formInline" :model="formInline" :rules="ruleInline" inline>
+        <FormItem prop="user" class="formUsername">
+          <Input type="text" v-model="formInline.user" placeholder="Username">
+            <Icon type="ios-person-outline" slot="prepend"></Icon>
+          </Input>
+        </FormItem>
+        <FormItem prop="password" class="formPassword">
+          <Input type="password" v-model="formInline.password" placeholder="Password">
+            <Icon type="ios-lock-outline" slot="prepend"></Icon>
+          </Input>
+        </FormItem>
+        <FormItem class="formBtn">
+          <Button @click="handleSubmit('formInline')">注册</Button>
+          <Button type="primary" @click="handleSubmit('formInline')">登录</Button>
+        </FormItem>
+        <FormItem class="formChange">
+          <Checkbox v-model="single">记住密码</Checkbox>
+          <a href="">忘记密码</a>
+        </FormItem>
+      </Form>
+    </Card>
+  </div>
 </template>
 
 <script>

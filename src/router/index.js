@@ -34,8 +34,19 @@ const router = new Router({
           component:()=>import( '../components/person/person'),
           meta:{
             title:'个人主页'
+          },
+        },
+        {
+          path:'about/check',
+          component:()=>import( '../components/check/check'),
+          meta:{
+            title:'个人主页'
           }
         },
+        {
+          path:'about/wait',
+          component:() => import('../components/wait/wait')
+        }
       ]
     },
   ]

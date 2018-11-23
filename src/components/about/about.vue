@@ -38,7 +38,7 @@
     name: "about",
     methods:{
       enter(){
-        this.$router.push('about/person')
+        this.$router.push('about/wait')
       }
     }
   }
